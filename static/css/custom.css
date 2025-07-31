@@ -1,0 +1,218 @@
+.header .time{
+    display: none!important;
+}
+
+.el-header{
+    display: none !important;
+}
+
+body{
+    overflow: hidden;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;    
+}
+/* 透明玻璃效果 */
+.inputcom {
+    background: rgba(255, 255, 255, 0.3) !important; /* 半透明白色背景 */
+    backdrop-filter: blur(10px) !important; /* 背景模糊效果 */
+    border-radius: 10px !important; /* 圆角效果 */
+    padding: 10px !important; /* 内边距 */
+    position: relative; /* 保证可以看到背后元素 */
+    z-index: 99 !important; /* 确保其显示在最上层 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 增加过渡效果 */
+    display: flex; /* 使用flexbox布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中对齐 */
+    width: 100%; /* 确保宽度100% */
+    height: 100%; /* 确保高度100% */
+}
+
+/* 鼠标悬停时的效果 */
+.inputcom:hover {
+    transform: scale(1.03); /* 鼠标悬停时轻微放大 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 增强阴影效果 */
+}
+
+/* 输入框样式 */
+.inputcom input {
+    background: transparent !important; /* 输入框背景透明 */
+    border: none !important; /* 去掉边框 */
+    color: #000 !important; /* 设置字体颜色 */
+    font-size: 16px !important; /* 设置字体大小 */
+    padding: 10px !important; /* 内边距 */
+    width: 100% !important; /* 让输入框占满父容器的宽度 */
+    height: 100% !important; /* 让输入框占满父容器的高度 */
+    box-sizing: border-box; /* 确保padding和border不会影响总宽度 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 增加过渡效果 */
+}
+
+
+
+
+
+/* 背景和透明玻璃效果 */
+.playcom {
+    background: rgba(255, 255, 255, 0.3) !important; /* 半透明白色背景 */
+    backdrop-filter: blur(12px) !important; /* 背景模糊效果 */
+    border-radius: 15px !important; /* 圆角效果 */
+    padding: 20px 30px !important; /* 增加内边距 */
+    position: relative;
+    z-index: 9999 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* 增加阴影效果 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 增加过渡效果 */
+}
+
+.playcom:hover {
+    transform: scale(1.03); /* 鼠标悬停时微调大小 */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 增强阴影效果 */
+}
+
+/* 顶部文字和按钮区域 */
+.playcom .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 !important;
+    font-family: 'Arial', sans-serif;
+}
+
+.playcom .top p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 按钮 */
+.playcom .btn {
+    background: linear-gradient(45deg, rgba(255, 165, 0, 0.8), rgba(255, 87, 34, 0.8)) !important; /* 渐变背景 */
+    color: white !important; /* 白色文字 */
+    padding: 12px 24px !important; /* 增加内边距 */
+    border-radius: 30px !important; /* 圆角按钮 */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.playcom .btn:hover {
+    background: linear-gradient(45deg, rgba(255, 87, 34, 0.9), rgba(255, 165, 0, 0.9)) !important; /* 鼠标悬停时渐变变化 */
+    transform: translateY(-3px); /* 提升按钮 */
+}
+
+/* 线路列表样式 */
+.playcom .list {
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(6px) !important;
+    border-radius: 12px !important;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.playcom .list a {
+    color: #fff;
+    padding: 8px 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.playcom .list a.active {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ff5722 !important; /* 活跃项颜色 */
+}
+
+.playcom .list a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px); /* 鼠标悬停时轻微右移 */
+}
+
+/* 使用教程区域 */
+.playcom .playnull {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.playcom .playnull h4 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.playcom .playnull p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 链接样式 */
+.playcom .playnull a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.playcom .playnull a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .playcom {
+        padding: 15px !important;
+    }
+
+    .playcom .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .playcom .btn {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .playcom .list {
+        padding: 10px !important;
+    }
+
+    .playcom .list a {
+        font-size: 14px !important;
+    }
+}
+
+
+/* art-video样式优化 */
+.art-video-player {
+    display: block !important; /* 确保它是块级元素 */
+    width: 100% !important; /* 使其宽度适应父容器 */
+    height: auto !important; /* 自适应高度 */
+    max-width: 100% !important; /* 防止超出容器宽度 */
+    border-radius: 15px !important; /* 圆角效果 */
+    overflow: hidden !important; /* 防止圆角被裁剪 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; /* 增加阴影效果 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时的效果 */
+.art-video-player:hover {
+    transform: scale(1.03) !important; /* 鼠标悬停时轻微放大 */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) !important; /* 增强阴影效果 */
+}
+
+/* video元素的样式 */
+.art-video-player {
+    width: 100% !important; /* 确保视频宽度占满容器 */
+    height: 100% !important; /* 确保视频高度占满容器 */
+    border-radius: 15px !important; /* 给视频本身也添加圆角 */
+    object-fit: cover !important; /* 确保视频按比例填充容器 */
+}
